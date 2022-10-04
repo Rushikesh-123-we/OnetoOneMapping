@@ -14,6 +14,7 @@ public class Country {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
+	private String state;
 	@OneToOne(mappedBy = "country")
 	private Capital capital;
 	public int getId() {
