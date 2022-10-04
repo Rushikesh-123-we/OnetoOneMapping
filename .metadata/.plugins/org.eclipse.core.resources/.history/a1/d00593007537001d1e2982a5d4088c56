@@ -1,0 +1,28 @@
+package com.onetoonemapping;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.onetoonemapping.entity.Capital;
+import com.onetoonemapping.repository.CapitalRepository;
+
+@SpringBootTest
+class OnetoonepracticeApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+	
+	@Autowired
+	CapitalRepository repository;
+	
+	@Test
+	public void getInsert() {
+		
+		Capital capital = new Capital();
+		repository.save(capital);
+	}
+	
+
+}

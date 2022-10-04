@@ -1,0 +1,5 @@
+package com.onetoonemapping.entity;
+
+public class Country {
+
+}

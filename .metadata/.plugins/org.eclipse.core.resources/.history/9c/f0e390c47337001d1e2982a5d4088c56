@@ -1,0 +1,7 @@
+package com.onetoonemapping.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CapitalRepository extends JpaRepository<T, ID> {
+
+}
